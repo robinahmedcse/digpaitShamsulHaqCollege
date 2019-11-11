@@ -14,3 +14,35 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+//route::prefix('')->group();
+//Route::prefix('')->group(function(){});
+
+//////////****************************************////////////
+route::prefix('/')->group(function(){
+    route::get('hsc/registration','frontEnd\reg\singup@index');
+    route::post('hsc/registration/save','frontEnd\reg\singup@hscSave');
+     route::post('email/check/save','frontEnd\reg\singup@ajaxEmail');
+});
+
+
+//////////****************************************////////////
+route::prefix('/hsc/student')->group(function(){
+    route::get('/login/form','frontEnd\reg\hscStudent@index');
+    
+});
+
+
+//////////****************************************////////////
+Route::prefix('supper/admin')->group(function(){
+        
+    
+});
+
+//////////****************************************////////////
+route::prefix('master/admin')->group(function(){
+    
+});
+
+

@@ -1,0 +1,34 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 10, 2019, 11:45:50 AM
+    Author     : Robin Ahmed
+*/
+
+.my_table{
+    color:Black;
+    background-color: cornsilk;
+    margin-top: 2%;
+}
+.my_table p{
+    
+     font: italic bold 30px/30px Georgia, serif;
+ 
+}
+ 
+
+.my_table label{
+     font: 20px arial, sans-serif;
+ 
+}
+
+.my_table input[type=text] {
+  background-color: window;  
+  font: italic bold 15px/15px Georgia, serif;
+} 
+
+ 
+ 
