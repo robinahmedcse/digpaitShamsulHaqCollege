@@ -46,15 +46,10 @@
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
               <a href="{{URL::to('/wp-admin/supper/master/dashboard')}}" class="site_title"> 
-                  <span>দিগপাইত শামসুল হক<br> ডিগ্রী কলেজ</span>
+                  <span>Admin Panel</span>
                    </a>
             </div>
-               <div class="navbar nav_title" style="border: 0;">
-              
-                  <span class="site_title">ডিগ্রী কলেজ</span>
-               
-            </div>
-
+             
             <div class="clearfix"></div>
 
             <!-- menu profile quick info -->

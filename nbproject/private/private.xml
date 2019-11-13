@@ -5,6 +5,7 @@
         <group>
             <file>file:/I:/xampp/htdocs/collegeMS/routes/web.php</file>
             <file>file:/I:/xampp/htdocs/collegeMS/app/Http/Controllers/frontEnd/reg/singup.php</file>
+            <file>file:/I:/xampp/htdocs/collegeMS/resources/views/frontEnd/regi/hscRegi.blade.php</file>
         </group>
     </open-files>
 </project-private>

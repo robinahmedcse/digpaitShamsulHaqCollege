@@ -2,60 +2,41 @@
     <div class="menu_section">
         <h3>General</h3>
         
-        <?php 
-                $role=Session::get('admin_role');
-                
-                
-                if($role == 'admin'){
-
-        ?>
+     
         
         <ul class="nav side-menu">
-            
-            
-            <li><a><i class="fa fa-home"></i> Dashboard <span class="fa fa-chevron-down"></span></a>
+            <li><a><i class="fa fa-home"></i>Dashboard<span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
-                    <li><a href="{{URL::to('/collage/admin/master/index')}}">Dashboard </a></li>
+                    <li><a href="{{URL::to('hsc/student/master/dashboard/')}}">Dashboard </a></li>
 
                 </ul>
             </li>
 
        
 			
-		<li><a><i class="fa fa-edit"></i>আমাদের কথা <span class="fa fa-chevron-down"></span></a>
+<li><a><i class="fa fa-edit"></i>আমাদের কথা <span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
                     <li><a href="{{URL::to('/wp-admin/supper/master/my/word/create')}}">আমাদের কথা সংযুক্ত করুন</a></li>
                     <li><a href="{{URL::to('/wp-admin/supper/master/my/word/manage')}}">আমাদের কথা তথ্য দেখুন</a></li>
                 </ul>
             </li>
-
-	
+  	
+			
+			
 	 
-        </ul>
-        
-        
-        
-        
-                <?php } elseif($role == 'acOfficer'){?>
-        
-                <ul class="nav side-menu">
-                    
-                    
-         <li><a><i class="fa fa-home"></i> Dashboard <span class="fa fa-chevron-down"></span></a>
-                <ul class="nav child_menu">
-                    <li><a href="{{URL::to('/collage/admin/master/index')}}">Dashboard </a></li>
-
-                </ul>
-            </li>
-       
+			
+			
+			
+			
+			
+			
+			
 	 
-
-
-
-  
-              
-        </ul>
-         <?php }  ?>
+     
+        
+        
+        
+         
     </div>
 
 <!--

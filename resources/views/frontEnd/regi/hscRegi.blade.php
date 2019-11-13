@@ -558,7 +558,7 @@
                                 </div>
                             </td>
                             <td width='25%'><div class="form-group">
-                                    <input type="possword" class="form-control" name="stu_password" required placeholder="Student Password">
+                                    <input type="password" id ="password" class="form-control" name="stu_password" required placeholder="Type Password">
                                 </div>
                             </td>
 
@@ -570,7 +570,8 @@
                                 </div>
                             </td>
                             <td width='25%'><div class="form-group">
-                                    <input type="possword" class="form-control" name="conf_password" required placeholder="Student Phone Number">
+                                    <input type="password" id="confirm_password" class="form-control" name="conf_password" required placeholder="Again Type Password">
+                                  <span id='message'></span>
                                 </div>
                             </td>
 
@@ -663,7 +664,21 @@
                       }
 </script>
 
+<script>
+ 
+ $('#password, #confirm_password').on('keyup', function () {
+  if ($('#password').val() == $('#confirm_password').val()) {
+       document.getElementById("mySubmit").disabled=false;
+    $('#message').html('Matching').css('color', 'green');
+  } else 
+            document.getElementById("mySubmit").disabled=true;
 
+    $('#message').html('Not Matching').css('color', 'red');
+});
+ 
+    </script>
+    
+    
 
 
 

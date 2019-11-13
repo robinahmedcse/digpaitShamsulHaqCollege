@@ -41,7 +41,7 @@
                 </div>
                 <div class="animate form login_form">
                     <section class="login_content">
-                        {!! Form::open(['url'=>'/collage/admin/login/check','method'=>'POST' ]) !!}
+                        {!! Form::open(['url'=>'/wp-admin/master/login/check/kori','method'=>'POST' ]) !!}
                         <h1>Login Form</h1>
                         <div class="form-group {{ $errors->has('email') ? ' has-error' : '' }}">
 

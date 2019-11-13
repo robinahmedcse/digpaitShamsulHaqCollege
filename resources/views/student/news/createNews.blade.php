@@ -1,5 +1,5 @@
 @extends('admin.master')
-@section('title','কৃতী শিক্ষার্থীদের তথ্য সংযুক্ত করুন')
+@section('title','Add New')
 
 
 @section('x')
@@ -16,7 +16,7 @@
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>কৃতী শিক্ষার্থীদের তথ্য<small>সংযুক্ত করুন</small></h2>
+                    <h2>সংবাদ<small>সংযুক্ত করুন</small></h2>
                     <ul class="nav navbar-right panel_toolbox">
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
@@ -41,35 +41,26 @@
                     
                      {!! Form::open(['url'=>'admin/save/news','method'=>'POST','class'=>'form-horizontal form-label-left']) !!}    
                         <!-- Category name -->
-          
-			 <div class="form-group">
-                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="product-name">শিক্ষার্থীর নাম  <span class="required">*</span>
+                     
+				     <div class="form-group">
+                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="newsDescription">সংবাদের বিবরন <span class="required">*</span>
                 </label>
                 <div class="col-md-6 col-sm-6 col-xs-12">
-                    <input type="text" id="" name="product_name" placeholder=' শিক্ষার্থীর নাম লিখুন' required class="form-control col-md-7 col-xs-12">
-                    <span class="text-danger">{{$errors->has('product_name')? $errors->first('product_name'):''}}</span>
-                </div>
-            </div>
-			
-		 
-					
-			    <div class="form-group">
-                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="newsDescription">কর্মস্থালের বিবরন<span class="required">*</span>
-                </label>
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                    <textarea class='form-control' name='newsDescription' row='8' placeholder='কর্মস্থালের বিবরন লিখুন'></textarea>
+                    <textarea class='form-control' name='newsDescription' row='8' placeholder='সংবাদের বিবরন লিখুন'></textarea>
                        <span class="text-danger">{{$errors->has('newsDescription')? $errors->first('newsDescription'):''}}</span>
                 </div>
             </div> 
-			
-		
+					
+                     
+
+                  <br />
 
                        <div class="form-group">
-                            <label class="control-label col-md-3 col-sm-3 col-xs-12">তথ্যের অবস্থা</label>
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">সংবাদের অবস্থা</label>
                             <div class="col-md-6 col-sm-6 col-xs-6">
                                  
                                 <select name="publicationStatus" class="form-control" required>
-                                    <option value="null">তথ্যের অবস্থা নিধারন করুন  </option>
+                                    <option value="null">সংবাদের অবস্থা নিধারন করুন  </option>
                                     <option value="1">প্রকাশিত</option>
                                     <option value="0">অপ্রকাশিত</option>
                                 </select>

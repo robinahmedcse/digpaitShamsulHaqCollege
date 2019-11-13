@@ -1,18 +1,17 @@
    
 
-@extends('admin.AdminMaster')
+@extends('student.studentMaster')
 
-@section('title','Home')
+@section('title','Home | Student Panel')
 
 
 @section('x')
+
+
+
 <div class="right_col" role="main">
     <div>
-        <?php 
-             $role=Session::get('admin_role');
-       ?>
-<!--       <h1>Role name:{{$role}}</h1>-->
- <h1>Admin Panel</h1>
+        <h1>{{Session::get('student_name_h')}} </h1>
     </div>
     
     
